@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit and Loss</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class = "heading">Profit and Loss</h1>
+
+    <div class="links"> 
+        <button class="link"><a href="https://github.com/Priyallohar/Profit-and-Loss">GitHub Code</a></button>
+        <button  class="link"><a href="https://priyalneogportfolio.netlify.app/">Portfolio</a></button>
+    </div> 
+
+    <main class="container">
+    <section>
+   <div class = 'inputbox'>
+     <h3 class="value-heading">Purchase Price</h3>
+     <input type="number" placeholder="Enter amount" id="purchse-price" step=".01">
+   </div>
+
+   <div class = 'inputbox' >
+    <h3 class="value-heading">Quantity</h3>
+    <input type="number" placeholder="Enter number" id="quantity">
+  </div>
+
+  <div class = 'inputbox'>
+    <h3 class="value-heading">Selling Price</h3>
+    <input type="number" placeholder="Enter amount" id="Selling-Price" step=".01">
+  </div>
+</section>
+
+  <button class="check-btn">Check</button>
+    </main>
+
+    <div class="error-message hidden ">Please enter valid values</div>
+    
+
+    <div class="profit-message"></div>
+    <div class="loss-message"></div>
+    <div class="no-loss-no-profit"></div>
+     
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: #000;
+    color: white;
+    
+}
+
+.heading {
+   margin: 15px auto 10px;
+    text-align: center;
+    color: #0ef;
+    font-size: 3rem;
+    letter-spacing: 5px;
+  }
+
+.container{
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    background: transparent;
+    border: 5px solid #807f7f;
+    border-radius: 10px;
+    transform: .5s;
+}
+.container:hover{
+    border: 5px solid #0ef;
+    box-shadow: 0 0 20px #0ef,inset 0 0 20px #0ef ;
+}
+.inputbox{
+    position: relative;
+    width: 320px;
+    margin: 20px 0 ;
+}
+
+.value-heading{
+    text-align: center;
+    margin: 10px auto 20px;
+}
+
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #807f7f;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 10px 0 35px;
+    transition: .5s
+}
+.container:hover .inputbox input{
+    border: 2px solid #0ef;
+    box-shadow: 0 0 10px #0ef,inset 0 0 10px #0ef;
+}
+
+.check-btn{
+        position: relative;
+        width:  50%;
+        height: 45px;
+        background: #333;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        color: #fff;
+        transition: .5s;
+        margin-top: 10px;
+}
+
+.container:hover button{
+    background-color: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef,inset 0 0 20px #0ef;
+}
+
+.error-message{
+    text-align: center;
+    font-size: 1.5rem;
+    color: red;
+    text-shadow :1px 1px 10px rgb(230, 89, 89);
+}
+
+.profit-message{
+    margin: 140px auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 170px;
+    width: 600px;
+    background: linear-gradient(
+        to right,
+        rgb(53, 172, 49),
+        rgb(48, 218, 42)
+      );
+    border-radius: 10px;
+    border: 3px solid rgb(48, 218, 42);
+    box-shadow: 0 0 10px  rgb(48, 218, 42),inset 0 0 10px rgb(0, 255, 34);
+}
+.profit-message h1{
+    margin: 10px;
+  color:rgb(0, 255, 34)
+}
+.loss-message{
+    margin: 140px auto;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 170px;
+    width: 600px;
+    background: linear-gradient(
+        to right,
+        #93291e,
+        #ed213a
+      );
+    border-radius: 10px;
+    border: 3px solid rgb(238, 46, 12);
+    box-shadow: 0 0 10px  rgb(238, 46, 12),inset 0 0 10px rgb(238, 46, 12);
+}
+.loss-message h1{
+    margin: 10px;
+    color:rgb(247, 100, 74);
+}
+
+.no-loss-no-profit{
+    margin: 140px auto;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 170px;
+    width: 600px;
+    background: linear-gradient(
+        to right,
+        #8d8b8b,
+        #f0eced
+      );
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px  rgb(255, 255, 255),inset 0 0 10px rgb(243, 241, 240);
+}
+
+.no-loss-no-profit h1{
+    margin: 40px;
+    color:rgb(252, 255, 252)
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.links button {
+    margin: 5px 40px;
+    padding: 5px 30px;
+    position: relative;
+    width: 200px;
+    height: 45px;
+    background: #333;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    transition: .5s;
+    margin-top: 10px;
+    
+}
+.links button a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size:large ;
+
+}
+.link:hover {
+    background-color: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef,inset 0 0 20px #0ef;
+}
+.hidden{
+    display: none ;
+} 
